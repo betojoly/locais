@@ -37,6 +37,9 @@ public class NewLocalActivity extends Activity {
     // url to create new local
     private static String url_create_local = "http://joly.imontanha.com//android_connect/create_local.php";
 
+    // create LOG_TAG
+
+
     // JSON Node names
     private static final String TAG_SUCCESS = "success";
 
