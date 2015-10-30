@@ -31,8 +31,8 @@ public class MainScreenActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Launching All Locais Activity
-                Intent i = new Intent(getApplication(), AllLocalActivity.class);
-                startActivity(i);
+                Intent alllocais = new Intent(getApplicationContext(), AllLocalActivity.class);
+                startActivity(alllocais);
             }
         });
 
@@ -42,7 +42,7 @@ public class MainScreenActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Launching create new product activity
-                Intent addlocal = new Intent(getApplication(), NewLocalActivity.class);
+                Intent addlocal = new Intent(getApplicationContext(), NovoLocalActivity.class);
                 startActivity(addlocal);
             }
         });

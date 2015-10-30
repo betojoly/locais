@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <!-- Input Nome -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome Local"
+        android:layout_margin="16dp"
+        android:textStyle="bold"
+        android:textSize="16dp" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/inputName"
+        android:editable="true" />
+
+
+    <!-- Input Addr -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Endereço"
+        android:layout_margin="16dp"
+        android:textStyle="bold"
+        android:textSize="16dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/inputAddr"
+        android:editable="true" />
+
+
+    <!-- Input Descrição -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Descrição"
+        android:layout_margin="16dp"
+        android:textStyle="bold"
+        android:textSize="16dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/inputDesc"
+        android:lines="4"
+        android:editable="true" />
+
+
+    <!-- Botão Salvar -->
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Criar Local"
+        android:id="@+id/btnCreateLocal"
+        android:layout_gravity="center_horizontal" />
+</LinearLayout>

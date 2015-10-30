@@ -23,12 +23,18 @@
         <activity
             android:name=".AllLocalActivity"
             android:label="Todos os Locais" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
         </activity>
 
         <!-- Add Local Activity -->
         <activity
-            android:name=".NewLocalActivity"
+            android:name=".NovoLocalActivity"
             android:label="Add Local" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
         </activity>
 
         <!-- Edit Local Activity -->

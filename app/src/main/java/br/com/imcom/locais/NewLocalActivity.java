@@ -19,7 +19,6 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.util.Log;
 
 /**
  * Created by BETO on 27/10/2015.
@@ -38,7 +37,7 @@ public class NewLocalActivity extends Activity {
     private static String url_create_local = "http://joly.imontanha.com//android_connect/create_local.php";
 
     // create LOG_TAG
-
+    private final String LOG_TAG = NewLocalActivity.class.getSimpleName();
 
     // JSON Node names
     private static final String TAG_SUCCESS = "success";
@@ -46,7 +45,7 @@ public class NewLocalActivity extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState, PersistableBundle persistentState) {
         super.onCreate(savedInstanceState, persistentState);
-        setContentView(R.layout.add_local);
+        setContentView(R.layout.novo_local);
 
         // Edit Text
         inputName = (EditText) findViewById(R.id.inputName);
@@ -66,6 +65,7 @@ public class NewLocalActivity extends Activity {
         });
 
     }
+
 
     /**
      * Background Async Task to Create new Local
